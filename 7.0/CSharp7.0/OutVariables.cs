@@ -17,6 +17,7 @@ namespace CSharp7_0
 
         public void PrintCoordinates(Point p)
         {
+            // 讨厌它很久了，就感觉被强迫一样～～～！
             int x, y; // have to "predeclare"
 
             p.GetCoordinates(out x, out y);
@@ -31,6 +32,8 @@ namespace CSharp7_0
 
             WriteLine($"({x}, {y})");
 
+            // out 参数可以定义为var型
+            // 类型不是必须知道的时候，我希望不知道。
             if (int.TryParse("s", out var i)) {
                 WriteLine(new string('*', i));
             }
@@ -38,7 +41,7 @@ namespace CSharp7_0
                 WriteLine("Cloudy - no stars tonight!");
             }
 
-            // 因为没有用到 "_" 这样写可以忽略声明
+            // 懒人专用，如果能不写就更爽了。
             p.GetCoordinates(out var x1, out _);
         }
     }
