@@ -8,6 +8,17 @@ namespace CSharp7_0
         {
             OutVariables.Descrition();
 
+            IsPatterns.Descrition();
+
+            SwitchPatterns.Descrition();
+
+            TuplesPatterns.Descrition();
+
+            LocalFunctions.Descrition();
+
+            LiteralImprovements.Descrition();
+
+            RefReturns.Descrition();
         }
     }
 }

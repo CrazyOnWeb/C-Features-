@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CSharp7_0
 {
-    public class OutVariables : UnUser
+    internal class OutVariables : UnUse
     {
-        public static void Descrition()
+        internal static void Descrition()
         {
             //
             // 新特性 1
@@ -15,7 +15,7 @@ namespace CSharp7_0
             //
         }
 
-        public void PrintCoordinates(Point p)
+        internal void PrintCoordinates(Point p)
         {
             // 讨厌它很久了，就感觉被强迫一样～～！
             int x, y; // have to "predeclare"
@@ -25,7 +25,7 @@ namespace CSharp7_0
             WriteLine($"({x}, {y})");
         }
 
-        public void PrintCoordinates7_0(Point p)
+        internal void PrintCoordinates7_0(Point p)
         {
             // 在方法形参内声明类型，少了一行代码，这个感觉好
             p.GetCoordinates(out int x, out int y);
