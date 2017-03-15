@@ -17,7 +17,7 @@ namespace CSharp7_0
 
         public void PrintCoordinates(Point p)
         {
-            // 讨厌它很久了，就感觉被强迫一样～～～！
+            // 讨厌它很久了，就感觉被强迫一样～～！
             int x, y; // have to "predeclare"
 
             p.GetCoordinates(out x, out y);
@@ -27,7 +27,7 @@ namespace CSharp7_0
 
         public void PrintCoordinates7_0(Point p)
         {
-
+            // 在方法形参内声明类型，少了一行代码，这个感觉好
             p.GetCoordinates(out int x, out int y);
 
             WriteLine($"({x}, {y})");
